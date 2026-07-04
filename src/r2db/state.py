@@ -5,7 +5,7 @@ Lets a compute host be disposable: restore the file before a run, back it up
 after. Keep these backups in a PRIVATE bucket, separate from any public serving
 bucket — the ``cache_control`` here is deliberately ``private, no-store``.
 
-Lifted, app-agnostic, from the ``r2sync`` package.
+App-agnostic — usable in any project.
 """
 
 from __future__ import annotations

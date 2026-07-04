@@ -12,9 +12,8 @@ ship against R2 unchanged:
 * **state**   — back up / restore a single file, e.g. a SQLite system-of-record,
                 to a private bucket (``backup_file`` / ``restore_file``).
 
-The reusable core (targets + publish + state) originated as the ``r2sync``
-package in the tdf26 project; the document ``store`` generalises it into a
-standalone database.
+The core (targets + publish + state) is a reusable object-storage publishing
+toolkit; the document ``store`` generalises it into a standalone database.
 """
 
 from .publish import Document, PublishResult, publish

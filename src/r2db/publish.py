@@ -9,7 +9,7 @@ This is the "serving layer" half of the Supabase replacement: render your data
 to a tree of static JSON and publish it to a PUBLIC R2 bucket. There is no API
 server and no row-level security to operate — read-only-public is just a bucket.
 
-Lifted, app-agnostic, from the ``r2sync`` package.
+App-agnostic — usable in any project.
 """
 
 from __future__ import annotations

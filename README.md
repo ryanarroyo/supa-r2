@@ -6,7 +6,6 @@ Supabase (Postgres + PostgREST + RLS). No server to host, no egress fees, and
 you develop against the local filesystem and ship against R2 without changing a
 line of code.
 
-
 ```
 your app ──► r2db.Store ──► BlobTarget ──► Cloudflare R2  (or local ./.r2db in dev)
              (documents)     ▲                 │
@@ -84,8 +83,8 @@ recipe below.
 
 ## Use it as a Supabase-style serving layer (the scalable recipe)
 
-The pattern the `tdf26` project uses in production, and the one to reach for when
-a collection outgrows client-side scans:
+A production-proven pattern, and the one to reach for when a collection outgrows
+client-side scans:
 
 1. Keep an append-only **SQLite** file as your system-of-record + compute engine
    (real SQL, joins, indexes — all local, all free).

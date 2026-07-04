@@ -7,7 +7,7 @@ Both implement the same tiny interface so every layer above them (the document
 store, the publisher, backup/restore) is target-agnostic — you develop and test
 against the filesystem and ship against R2 without changing a line.
 
-Lifted, app-agnostic, from the ``r2sync`` package.
+App-agnostic — usable in any project.
 """
 
 from __future__ import annotations
