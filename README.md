@@ -6,10 +6,6 @@ Supabase (Postgres + PostgREST + RLS). No server to host, no egress fees, and
 you develop against the local filesystem and ship against R2 without changing a
 line of code.
 
-It grew out of the reusable `r2sync` package in the
-[`tdf26`](https://github.com/ryanarroyo/tdf26) project (blob targets, static-JSON
-publishing, file backup/restore) and generalises it — adding a document/collection
-store so R2 can act as an actual database, not just a publish sink.
 
 ```
 your app ──► r2db.Store ──► BlobTarget ──► Cloudflare R2  (or local ./.r2db in dev)
